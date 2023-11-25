@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .tableHocVienRes {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  .tableHocVienRes h1 {
+    text-align: left !important;
+  }
+  .inputTableHocVienRes {
+    width: 100% !important;
+  }
+}

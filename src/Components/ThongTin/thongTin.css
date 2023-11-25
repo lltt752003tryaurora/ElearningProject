@@ -1,0 +1,46 @@
+.thongTin {
+  background-image: url("https://demo2.cybersoft.edu.vn/static/media/bgAbout.19ac825c.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 70vh;
+  background-attachment: fixed;
+}
+.textP {
+  font-size: 16px;
+  line-height: 2.2;
+  color: #8c8c8c;
+}
+.textP::first-letter {
+  font-size: 45px;
+  line-height: 35px;
+  float: left;
+  display: block;
+  color: #cd5c5b;
+}
+.bgAboutGreen {
+  background-image: url("https://demo2.cybersoft.edu.vn/static/media/hero-flex.553afb64.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.bgAboutBlue {
+  background-image: url("https://demo2.cybersoft.edu.vn/static/media/hero-flex.553afb64.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+@media (max-width: 950px) {
+  .textReponsive {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .thongTinResponsive {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  .reverseThongTin {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}

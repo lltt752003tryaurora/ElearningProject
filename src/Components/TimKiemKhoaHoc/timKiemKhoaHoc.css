@@ -1,0 +1,114 @@
+.searchPage {
+  padding: 20px 50px;
+}
+.boxSearch {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.boxSearch input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 2px solid #6ab5f8;
+  border-radius: 5px;
+}
+.boxSearch:hover input ~ .checkMark {
+  /* background-color: #ccc; */
+}
+.boxSearch i {
+  color: #f6ba35;
+}
+.boxSearch input ~ .checkMark i {
+  position: absolute;
+  display: none;
+  left: 2px;
+  top: 2px;
+  color: white;
+  animation: zoomI 0.2s ease-in-out;
+}
+.boxSearch input:checked ~ .checkMark {
+  background-color: #6ab5f8;
+}
+
+.boxSearch input:checked ~ .checkMark i {
+  display: inline-block;
+}
+.navFilter > h6 {
+  font-size: 25px;
+  padding-bottom: 16px;
+}
+
+.navFilter > h6 i {
+  margin-right: 5px;
+  color: #6ab5f8;
+}
+
+.filterItem h6 {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.filterItem {
+  margin-bottom: 10px;
+}
+
+.filterItem ul {
+  padding-left: 15px;
+}
+.filterItem ul li {
+  padding: 5px 0;
+}
+
+.btnKhoaHoc {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnKhoaHoc:hover {
+  background-color: #6ab5f8;
+  box-shadow: 0px 15px 20px #6ab5f8;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btnKhoaHoc:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 992px) {
+  .timKiemResponsive {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 768px) {
+  .searchPageResponsive {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}

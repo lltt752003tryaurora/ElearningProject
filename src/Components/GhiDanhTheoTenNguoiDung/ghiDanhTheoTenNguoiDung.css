@@ -1,0 +1,8 @@
+@media (max-width: 992px) {
+  .textGhiDanhTenRes {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}

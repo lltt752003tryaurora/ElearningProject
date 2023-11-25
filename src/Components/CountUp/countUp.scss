@@ -1,0 +1,36 @@
+.counting-sec {
+  padding: 40px 0;
+  width: 100%;
+  background: #f0f8ff;
+}
+.inner-width {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.num {
+  font-size: 50px;
+  color: #6ab5f8;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .inner-width {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .inner-width {
+    display: flex;
+    flex-direction: column;
+  }
+}

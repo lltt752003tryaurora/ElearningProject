@@ -1,0 +1,9 @@
+@media (max-width: 1023px) {
+  .feedBackHocVien {
+    grid-template-columns: none !important;
+    gap: 0 !important;
+  }
+  .feedBack {
+    padding: 0 30px 50px 30px !important;
+  }
+}

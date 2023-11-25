@@ -1,0 +1,64 @@
+.carouselLeft {
+  background-image: url("./../../assets/img/—Pngtree—paper\ note\ cute\ learning\ background_1432207.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//button
+.buttonBanner {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #ff0072;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ff0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonBanner:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ff0072;
+  z-index: -1;
+}
+
+.buttonBanner:hover,
+.buttonBanner:focus {
+  color: white;
+}
+
+.buttonBanner:hover:before,
+.buttonBanner:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonBanner:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 992px) {
+  .bannerCarousel {
+    grid-template-columns: 1fr !important;
+  }
+  .carouselLeft {
+    padding: 100px;
+  }
+}

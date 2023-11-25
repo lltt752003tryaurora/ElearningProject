@@ -1,0 +1,85 @@
+.khoaHoc {
+  padding: 50px;
+}
+.thongTinKhoaHoc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  gap: 20px;
+}
+
+.itemKhoaHoc {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.noiDungKhoaHoc::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -160%;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-17deg);
+}
+
+.itemKhoaHoc:hover .noiDungKhoaHoc::before {
+  animation: trangGuong 1.5s;
+}
+
+.itemKhoaHoc li {
+  padding: 5px;
+}
+
+.itemKhoaHoc li i {
+  padding-right: 10px;
+}
+.itemLon {
+  grid-row: 1 / span 2;
+  background-color: #6bb5f8;
+  background-image: url("./../../assets/img/astronaut.png");
+  background-position: right bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.itemKhoaHoc h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.itemLon p {
+  font-weight: 300;
+}
+.itemLon p span {
+  font-weight: 700;
+}
+.itemNhoA {
+  background-color: #b86bf8;
+}
+
+.itemNhoB {
+  background-color: #6bb5f8;
+}
+.itemNhoC {
+  background-color: #6bb5f8;
+}
+
+@keyframes trangGuong {
+  100% {
+    left: 170%;
+  }
+}
+@media (max-width: 992px) {
+  .thongTinKhoaHoc {
+    grid-template-columns: none;
+  }
+}

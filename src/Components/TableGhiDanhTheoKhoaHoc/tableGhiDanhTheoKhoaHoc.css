@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .tableGhiDanhKhoaHocRes {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  .tableGhiDanhKhoaHocRes h1 {
+    text-align: center !important;
+  }
+  .inputGhiDanhRes {
+    width: 100% !important;
+  }
+}

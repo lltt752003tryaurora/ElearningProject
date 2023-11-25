@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .khoaHocResponsive {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 576px) {
+  .khoaHocResponsive {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
